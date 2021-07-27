@@ -1,0 +1,40 @@
+{
+  "manifest_version": 2,
+  "name": "Cyber Campus Assistant",
+  "version": "1.0",
+  "description": "Assistant for Cyber Campus.",
+  "icons": {
+    "128": "logo.png"
+  },
+  "permissions": [
+    "declarativeContent",
+    "activeTab",
+    "webNavigation",
+    "storage",
+    "https://e-cyber.catholic.ac.kr/*"
+  ],
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": false
+  },
+  "page_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "128": "logo.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://cms.catholic.ac.kr/em/*",
+        "https://e-cyber.catholic.ac.kr/ilos/st/course/online_view_form.acl"
+      ],
+      "all_frames": true,
+      "js": [
+        "contentScript.js"
+      ]
+    }
+  ]
+}

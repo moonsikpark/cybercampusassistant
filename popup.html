@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    body {
+      min-width: 350px;
+      max-width: 100%;
+      position: relative;
+      vertical-align: middle;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>Cyber Campus Assistant</h2>
+  <table>
+    <tr>
+      <td>Remove Intro:</td>
+      <td><input type="checkbox" id="intro" name="intro" checked></td>
+    </tr>
+    <tr>
+      <td>Multiple Playback:</td>
+      <td><input type="checkbox" id="multi" name="multi" checked></td>
+    </tr>
+    <tr>
+      <td>Save Last Played Time:</td>
+      <td><input type="checkbox" id="lastplayed" name="lastplayed" checked></td>
+      <td><button class="reset" data-target="lastplayed">Clear</button></td>
+    </tr>
+    <tr>
+      <td>Play Speed:</td>
+      <td><input type="range" id="speed" name="speed" min="0.1" max="10" value="1" step="0.1" />&nbsp;
+        <span style="display: inline-block; width: 30px;"><span id="speedValue">1</span>x</span>
+      </td>
+      <td><button class="reset" data-target="speed">R</button></td>
+    </tr>
+    <tr>
+      <td>Seek Seconds:</td>
+      <td><input type="range" id="seek" name="seek" min="1" max="120" value="10" step="1" />&nbsp;
+        <span style="display: inline-block; width: 30px;"><span id="seekValue">10</span>s</span>
+      </td>
+      <td><button class="reset" data-target="seek">R</button></td>
+    </tr>
+    <tr>
+      <td>Download Media:</td>
+      <td>
+        <div id="download"></div>
+      </td>
+    </tr>
+  </table>
+  <script src="popup.js"></script>
+</body>
+
+</html>
