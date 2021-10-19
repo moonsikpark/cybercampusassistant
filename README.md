@@ -2,7 +2,7 @@
 
 ### Introduction
 
-![intro](images/intro.png)
+<img width="276" alt="2021-10-20_013904" src="https://user-images.githubusercontent.com/47686265/137954562-68f1b473-be3f-4f6a-afe2-016ea80b647c.png">
 
 This program assists users of the Cyber Campus of the Catholic University of Korea.
 
@@ -11,6 +11,7 @@ This program assists users of the Cyber Campus of the Catholic University of Kor
 ##### Remove Intro
 
 Remove loud and noisy intro video. 
+
 
 ##### Multiple Playback
 
