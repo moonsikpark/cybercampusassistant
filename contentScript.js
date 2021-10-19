@@ -21,7 +21,7 @@ if (document.location.host.startsWith("e-cyber")) {
     // a custom script that ignores isForce argument which closes the 
     // window by force.
     const runningScript = `
-    const callback = (isKjkey, isForce) => {
+    var callback = (isKjkey, isForce) => {
         if(isKjkey && !isForce) {
                 document.location.href="/ilos/st/course/online_list_form.acl?WEEK_NO=1";
         }
